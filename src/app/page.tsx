@@ -2,6 +2,7 @@
 import * as React from 'react';
 import { ReferralCard } from '@/components/ReferralCard/ReferralCard';
 import { referralData } from '@/services/referralService';
+import Image from 'next/image';
 
 const ReferralManager: React.FC = () => (
   <main className="flex flex-col items-center bg-slate-950 pb-4">
@@ -15,18 +16,36 @@ const ReferralManager: React.FC = () => (
           </p>
           <button className="mt-3 text-blue-300 font-semibold flex items-center gap-2">
             View referral Ranking
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d5f2fa3e3bc95659b347bbde783b1eb32db180cbb99e0730b3e5e8e8563b2b3b?placeholderIfAbsent=true&apiKey=96fc5fc9f166424d9d32db07e1947910" alt="" className="w-4 aspect-square" />
+            <Image
+              src="/assets/icons/ranking-icon.png"
+              alt="Ranking Icon"
+              width={16}
+              height={16}
+              className="w-4 aspect-square"
+            />
           </button>
         </section>
         <section className="flex w-1/2 justify-center">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/52b565348d05b086e1ff3e698a2ddeaa45bc4fada2aecfc24102ca22d6f12dd8?placeholderIfAbsent=true&apiKey=96fc5fc9f166424d9d32db07e1947910" alt="Referral program illustration" className="w-full aspect-[1.52] rounded" />
+          <Image
+            src="/assets/images/referral-illustration.png"
+            alt="Referral program illustration"
+            width={500}
+            height={330}
+            className="w-full aspect-[1.52] rounded"
+          />
         </section>
       </div>
     </header>
 
     <section className="mt-4 max-w-[1029px] w-full">
       <h2 className="flex gap-2 text-gray-50 text-base font-medium items-center mb-3">
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/41ee5cb87ef303b9d622cb1aafd5fb22128f654873cd3c62985e6a591f714d62?placeholderIfAbsent=true&apiKey=96fc5fc9f166424d9d32db07e1947910" alt="How it works icon" className="w-6" />
+        <Image
+          src="/assets/icons/how-it-works-icon.png"
+          alt="How it works icon"
+          width={24}
+          height={24}
+          className="w-6"
+        />
         How It Works?
       </h2>
       <div className="flex flex-wrap gap-2">

@@ -4,4 +4,4 @@ export interface ReferralCardProps {
     description: string;
 }
 
-export interface ReferralData extends ReferralCardProps {}
+export type ReferralData = ReferralCardProps;
