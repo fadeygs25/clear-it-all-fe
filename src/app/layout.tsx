@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased ${anuphan.className}`}>
+      <body className="antialiased">
         {children}
       </body>
     </html>
