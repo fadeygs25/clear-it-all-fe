@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
 import "../assets/globals.css";
+import { Anuphan } from "@next/font/google";
+
+const anuphan = Anuphan({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
+      <body className={`antialiased ${anuphan.className}`}>
         {children}
       </body>
     </html>

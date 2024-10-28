@@ -13,7 +13,7 @@ export const ReferralCard: React.FC<ReferralCardProps> = ({ icon, title, descrip
         className="mb-6"
         priority
       />
-      <div className="flex flex-col mt-6 max-w-full w-[222px]">
+      <div className="flex flex-col mt-2 max-w-full">
         <h3 className="text-base font-medium text-gray-50">{title}</h3>
         <p className="mt-2 text-sm leading-6 text-stone-300">{description}</p>
       </div>

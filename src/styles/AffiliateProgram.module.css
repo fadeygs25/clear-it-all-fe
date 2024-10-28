@@ -1,0 +1,20 @@
+/* AffiliateProgram.module.css */
+
+.title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.gradientText {
+    color: var(--Neutral-1, #fcfcfd);
+    background: var(--Gradient-3,
+        linear-gradient(90deg,
+            #abeca2 -1.42%,
+            #2fb3fe 30.38%,
+            #6a8eea 65.09%,
+            #a185f4 99.55%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

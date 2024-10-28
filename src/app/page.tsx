@@ -3,6 +3,7 @@ import * as React from 'react';
 import { ReferralCard } from '@/components/ReferralCard/ReferralCard';
 import { referralData } from '@/services/referralService';
 import Image from 'next/image';
+import styles from '../styles/AffiliateProgram.module.css';
 
 const ReferralManager: React.FC = () => (
   <main className="flex overflow-hidden flex-col items-center pb-4 bg-slate-950">
@@ -46,7 +47,7 @@ const ReferralManager: React.FC = () => (
       </div>
     </header>
 
-    <section className="flex flex-col mt-4 w-full max-w-[1029px] max-md:max-w-full">
+    <section className="flex flex-col mt-4 w-full px-11 max-md:max-w-full">
       <div className="flex gap-6 items-center self-start text-base font-medium text-gray-50">
         <div className="flex gap-2 items-center self-stretch my-auto">
           <Image
@@ -68,15 +69,18 @@ const ReferralManager: React.FC = () => (
       </div>
     </section>
 
-    <section className="flex flex-col justify-center items-center px-80 py-12 mt-4 w-full leading-6 bg-gray-900 max-w-[1029px] min-h-[177px] max-md:px-5 max-md:max-w-full">
-      <div className="flex flex-col items-center max-w-full w-[303px]">
-        <h2 className="text-base font-bold text-center text-gray-50 bg-clip-text bg-[linear-gradient(90deg,#ABECA2_-1.42%,#2FB3FE_30.38%,#6A8EEA_65.09%,#A185F4_99.55%)]">
-          Apply Copin Affilate Program to get more benefits!
-        </h2>
-        <button className="flex gap-2 items-center mt-1 text-sm font-semibold text-blue-400">
-          <span className="self-stretch my-auto">Contact us</span>
-          <span className="flex shrink-0 self-stretch my-auto w-4 h-4" aria-hidden="true" />
-        </button>
+    <section className="flex flex-col justify-center items-center w-full leading-6 px-11 min-h-[177px] max-md:px-5 max-md:max-w-full">
+      <div className="flex flex-col justify-center items-center px-80 py-12 mt-4 w-full leading-6 bg-gray-900 min-h-[177px] max-md:px-5 max-md:max-w-full">
+        <div className="flex flex-col items-center max-w-full w-[303px]">
+          <h2 className={styles.title}>
+            Apply <span className={styles.gradientText}>Copin Affiliate Program</span> to get more benefits!
+          </h2>
+
+          <button className="flex gap-2 items-center mt-1 text-sm font-semibold text-blue-400">
+            <span className="self-stretch my-auto">Contact us</span>
+            <span className="flex shrink-0 self-stretch my-auto w-4 h-4" aria-hidden="true" />
+          </button>
+        </div>
       </div>
     </section>
   </main>
