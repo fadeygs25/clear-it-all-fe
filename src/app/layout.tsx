@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "../assets/globals.css";
-import { Anuphan } from "@next/font/google";
+import { Anuphan } from "next/font/google";
 
 const anuphan = Anuphan({
   subsets: ["latin"],
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className={`antialiased ${anuphan.className}`}>
         {children}
       </body>
     </html>
